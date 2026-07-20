@@ -4,89 +4,210 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fizz Ride Hub</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body{
-      margin:0;
-      font-family:Arial,sans-serif;
-      background:#0f172a;
-      color:white;
-      text-align:center;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
 
-    .header{
-      background:#00b14f;
-      padding:25px;
+    body {
+      background: #0f172a;
+      color: white;
+      padding: 20px;
     }
 
-    .header h1{
-      margin:0;
-      font-size:30px;
+    .header {
+      background: linear-gradient(135deg, #00b14f, #00d46a);
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
 
-    .header p{
-      margin-top:10px;
+    .header h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
     }
 
-    .container{
-      padding:20px;
+    .header p {
+      opacity: 0.95;
+      font-size: 15px;
     }
 
-    .button{
-      display:block;
-      background:#1e293b;
-      color:white;
-      text-decoration:none;
-      padding:18px;
-      margin:15px auto;
-      border-radius:15px;
-      width:90%;
-      max-width:350px;
-      font-size:20px;
+    .info-card {
+      background: #1e293b;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 25px;
     }
 
-    .button:hover{
-      background:#00b14f;
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
     }
 
-    footer{
-      margin:40px;
-      color:#cbd5e1;
+    .info-row:last-child {
+      margin-bottom: 0;
     }
 
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #00d46a;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 18px;
+      padding: 22px 15px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #00b14f;
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .amenities {
+      background: #1e293b;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+    .amenity-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .amenity-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .amenity-item span {
+      margin-right: 12px;
+      font-size: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .footer strong {
+      color: #00d46a;
+    }
   </style>
-
 </head>
-
 <body>
 
-<div class="header">
+  <div class="header">
+    <h1>🚗 Fizz Ride Hub</h1>
+    <p>Welcome aboard • Enjoy your journey</p>
+  </div>
 
-<h1>🚗 Fizz Ride Hub</h1>
+  <div class="info-card">
+    <div class="info-row">
+      <span><strong>Driver</strong></span>
+      <span>Fizz</span>
+    </div>
+    <div class="info-row">
+      <span><strong>Vehicle</strong></span>
+      <span>Mitsubishi ASX</span>
+    </div>
+    <div class="info-row">
+      <span><strong>Service</strong></span>
+      <span>⭐⭐⭐⭐⭐ Premium Ride</span>
+    </div>
+  </div>
 
-<p>Selamat datang ke Grab saya.</p>
+  <h2 class="section-title">Main Menu</h2>
+  <div class="grid">
+    <a class="card" href="https://youtube.com" target="_blank">
+      <div class="icon">🎬</div>
+      <h3>Entertainment</h3>
+    </a>
 
-</div>
+    <a class="card" href="https://maps.google.com" target="_blank">
+      <div class="icon">📍</div>
+      <h3>Explore KL</h3>
+    </a>
 
-<div class="container">
+    <a class="card" href="https://www.grab.com/my/food/" target="_blank">
+      <div class="icon">🍔</div>
+      <h3>Food &amp; Drinks</h3>
+    </a>
 
-<a class="button" href="https://youtube.com">🎬 Hiburan</a>
+    <a class="card" href="https://www.e-solat.gov.my" target="_blank">
+      <div class="icon">🕌</div>
+      <h3>Prayer Time</h3>
+    </a>
 
-<a class="button" href="https://maps.google.com">📍 Tempat Menarik</a>
+    <a class="card" href="https://www.accuweather.com" target="_blank">
+      <div class="icon">🌤️</div>
+      <h3>Weather</h3>
+    </a>
 
-<a class="button" href="https://www.e-solat.gov.my">🕌 Waktu Solat</a>
+    <a class="card" href="https://translate.google.com" target="_blank">
+      <div class="icon">🌐</div>
+      <h3>Translate</h3>
+    </a>
 
-<a class="button" href="#">⭐ Rate Driver</a>
+    <a class="card" href="#">
+      <div class="icon">⭐</div>
+      <h3>Rate Driver</h3>
+    </a>
 
-<a class="button" href="#">💰 Tip Driver</a>
+    <a class="card" href="#">
+      <div class="icon">💰</div>
+      <h3>Tip Driver</h3>
+    </a>
+  </div>
 
-</div>
+  <div class="amenities">
+    <h2 class="section-title">Amenities</h2>
+    <div class="amenity-item"><span>❄️</span> Aircond</div>
+    <div class="amenity-item"><span>🔌</span> USB-C Charging</div>
+    <div class="amenity-item"><span>🍬</span> Gula-gula</div>
+    <div class="amenity-item"><span>💧</span> Air Mineral</div>
+    <div class="amenity-item"><span>🛜</span> WiFi (jika ada)</div>
+  </div>
 
-<footer>
-
-Terima kasih kerana memilih Grab Fizz ❤️
-
-</footer>
+  <div class="footer">
+    <p>Terima kasih kerana memilih <strong>Grab Fizz</strong> ❤️</p>
+    <p>Semoga perjalanan anda selesa dan selamat</p>
+  </div>
 
 </body>
 </html>
